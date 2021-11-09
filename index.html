@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+      <a class="navbar-brand" href=""><i class="icon fas fa-cloud"></i>Weather</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact us</a>
+          </li>
+      </ul>
+      </div>
+  </nav>
+    <div class="app-main">
+        <div class="searchInputBox">
+            <input type="text" id="input-box" class="input-box" placeholder="Enter city name..." autocomplete="off">
+        </div>
+
+        <div class="weather-body">
+            <div class="location-details">
+                <div class="city" id="city"></div>
+                <div class="date" id="date"></div>
+            </div>
+
+            <div class="weather-status">
+                <div class="temp" id="temp"></div>
+                <div class="min-max" id="min-max"></div>
+                <div class="weather" id="weather"></div>
+                <div id="img"></div>
+            </div>
+        </div>
+         
+    </div>
+    
+    <script src="app.js"></script>
+    <section id="features">
+        <div class="row">
+            <div class="feature-box col-lg-4">
+                <i class="icon fas fa-cloud fa-4x"></i>
+                <h3>Instant Updates</h3>
+            </div>
+                <div class="feature-box col-lg-4">
+                    <i class="icon fas fa-check-circle fa-4x"></i>
+                    <h3>Accurate Report</h3>
+                </div>
+            <div class="feature-box col-lg-4">
+                <i class="icon fas fa-heart fa-4x"></i>
+                <h3>Easy to Use</h3>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+    <footer id="footer">
+        <a href=""><i class="social-icon fab fa-twitter fa-2x"></i></a>
+        <a href=""><i class="social-icon fab fa-facebook-f fa-2x"></i></a>
+        <a href=""><i class="social-icon fab fa-instagram fa-2x"></i></a>
+        <a href=""><i class="social-icon fas fa-envelope-square fa-2x"></i></a>
+    </footer>
+    </section>
+</body>
+</html>
