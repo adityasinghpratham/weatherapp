@@ -33,7 +33,9 @@ function showWeatherReport(weather){
         document.body.style.backgroundImage = "url('images/clear1.jpg')";
     } else if(weatherType.textContent == 'Clouds') {
         document.body.style.backgroundImage = "url('images/cloud1.jpg')";
-    } else if(weatherType.textContent == 'Haze') {
+    } else if(weatherType.textContent == 'Mist') {
+        document.body.style.backgroundImage = "url('images/mist.jpg')";
+    }else if(weatherType.textContent == 'Haze') {
         document.body.style.backgroundImage = "url('images/haze.jpg')";
     } else if(weatherType.textContent == 'Rain') {
         document.body.style.backgroundImage = "url('images/rain1.jpg')";
